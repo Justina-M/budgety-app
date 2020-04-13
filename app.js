@@ -282,7 +282,7 @@ var UIController = (function() {
             editBtn.parentNode.replaceChild(saveBtn, editBtn);
             
             if (type === 'exp') {
-                document.querySelector(DOMstrings.expensesPercLabel).classList.add('display-none');
+                document.querySelector('#' + selectorId + ' ' + DOMstrings.expensesPercLabel).classList.add('display-none');
             }
             
             // Save the current <div> element with description :
@@ -352,7 +352,7 @@ var UIController = (function() {
                 saveBtn.parentNode.replaceChild(editBtn, saveBtn);
                 
                 if (type === 'exp') {
-                    document.querySelector(DOMstrings.expensesPercLabel).classList.remove('display-none');
+                    document.querySelector('#' + selectorId + ' ' + DOMstrings.expensesPercLabel).classList.remove('display-none');
                 }
                 
                 return {
